@@ -1,0 +1,43 @@
+{
+  "name": "decentralized-fund-governance",
+  "version": "1.0.0",
+  "description": "Decentralized Investment Fund Governance System with Multi-Tier Treasury Management",
+  "main": "index.js",
+  "scripts": {
+    "test": "hardhat test",
+    "test:unit": "hardhat test test/unit --reporter json",
+    "test:integration": "hardhat test test/integration",
+    "test:watch": "hardhat test --watch",
+    "compile": "hardhat compile",
+    "deploy": "hardhat run scripts/deploy/deploy.js --network localhost",
+    "deploy:verify": "hardhat run scripts/deploy/verify.js",
+    "demo": "hardhat run scripts/interact/demo-full-flow.js --network localhost",
+    "node": "hardhat node",
+    "clean": "hardhat clean",
+    "coverage": "hardhat coverage",
+    "gas-report": "REPORT_GAS=true hardhat test"
+  },
+  "keywords": [
+    "governance",
+    "dao",
+    "defi",
+    "treasury",
+    "voting",
+    "delegation",
+    "timelock",
+    "ethereum",
+    "solidity"
+  ],
+  "author": "CryptoVentures DAO",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+    "hardhat": "^2.19.5",
+    "chai": "^4.3.7",
+    "ethers": "^6.7.1"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.1"
+  }
+}
